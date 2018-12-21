@@ -19,23 +19,33 @@ public class Test {
 		System.out.println(twoSum[0]+":"+twoSum[1]);
 		
 	}
-
+/**
+ * 
+ * @Title: twoSum  
+ * @Description: TODO(ç»™å®štargetæ•´æ•°æ˜¯intæ•°ç»„ä¸­ä¸¤ä¸ªæ•°çš„å’Œï¼Œæ±‚è¿™ä¸¤ä¸ªæ•°çš„å‡ºç°ä½ç½®)   
+ * @param: @param nums intæ•°ç»„
+ * @param: @param target ä¸¤ä¸ªæ•°ç»„æ•°çš„å’Œ 
+ * @param: @return
+ * @param: @throws Exception      
+ * @return: int[]      
+ * @throws
+ */
 	public static int[] twoSum(int[] nums, int target) throws Exception {
 		
-		//¶¨ÒåÒ»¸öHashMap
+		//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½HashMap
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		//forÑ­»·  0-nums.length
+		//forÑ­ï¿½ï¿½  0-nums.length
 		for (int i = 0; i < nums.length; i++) {
 			int complement = target - nums[i];
-			//Èç¹ûHashMap ´æÔÚ½á¹û ÄÇÃ´·µ»Ø½á¹ûºÍi
+			//ï¿½ï¿½ï¿½HashMap ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½i
 			if(map.containsKey(complement)){
 				int[] a={i,map.get(complement)}; 
 				return  a;
 			}
-			//·ñÔò¾Í²åÈënums[i]
+			//ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½nums[i]
 			map.put(nums[i], i);			
 		}
-		throw new Exception("²ÎÊıÊäÈëÓĞÎó");
+		throw new Exception("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 
 		
 //    	int x=0,y=0;
