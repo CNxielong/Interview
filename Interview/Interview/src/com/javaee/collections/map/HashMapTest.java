@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class HashMapTest {
 
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		HashMap<MapElement, String> map = new HashMap<MapElement, String>();
 		MapElement mapElement1 = new MapElement(1, "xielong1");//A 放入
 		MapElement mapElement2 = new MapElement(2, "xielong2");//B 放入
