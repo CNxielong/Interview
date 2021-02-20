@@ -22,9 +22,9 @@ public class Test {
 /**
  * 
  * @Title: twoSum  
- * @Description: TODO(ç»™å®štargetæ•´æ•°æ˜¯intæ•°ç»„ä¸­ä¸¤ä¸ªæ•°çš„å’Œï¼Œæ±‚è¿™ä¸¤ä¸ªæ•°çš„å‡ºç°ä½ç½®)   
- * @param: @param nums intæ•°ç»„
- * @param: @param target ä¸¤ä¸ªæ•°ç»„æ•°çš„å’Œ 
+ * @Description: TODO(¸ø¶¨targetÕûÊıÊÇintÊı×éÖĞÁ½¸öÊıµÄºÍ£¬ÇóÕâÁ½¸öÊıµÄ³öÏÖÎ»ÖÃ)   
+ * @param: @param nums intÊı×é
+ * @param: @param target Á½¸öÊı×éÊıµÄºÍ 
  * @param: @return
  * @param: @throws Exception      
  * @return: int[]      
@@ -32,20 +32,20 @@ public class Test {
  */
 	public static int[] twoSum(int[] nums, int target) throws Exception {
 		
-		//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½HashMap
+		//???????HashMap
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		//forÑ­ï¿½ï¿½  0-nums.length
+		//for???  0-nums.length
 		for (int i = 0; i < nums.length; i++) {
 			int complement = target - nums[i];
-			//ï¿½ï¿½ï¿½HashMap ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½i
+			//???HashMap ?????? ??????????i
 			if(map.containsKey(complement)){
 				int[] a={i,map.get(complement)}; 
 				return  a;
 			}
-			//ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½nums[i]
+			//????????nums[i]
 			map.put(nums[i], i);			
 		}
-		throw new Exception("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		throw new Exception("????????????");
 
 		
 //    	int x=0,y=0;
